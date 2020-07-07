@@ -1,0 +1,44 @@
+https://www.youtube.com/watch?v=ZMgLZUYd8Cw&feature=share&fbclid=IwAR3MAYarMD8k-CcsH_83zG9GxR5wDAuNCAJKNAbD6Rjj_8DCHbus33kZzqE
+
+How to introduce your username and email in command line?
+
+-	git config --global user.name "ancamariaa"
+-	git config --global user.email "ciuciuancamaria@yahoo.com"
+	-	git config list  (pt a verifica datele introduse)
+
+
+
+How to clone a repository from GitHub?
+
+-	mkdir workspace  (creare director)
+-	cd workspace
+-	git clone https://github.com/ancamariaa/Tema1.git  --> (se pune linkul de github de la repository
+
+Daca vrei sa faci un fisier nou in clona:
+
+-	touch new.java
+-	subl new.java --> (pentru editare)
+
+Pentru a verifica statusul folderului:
+
+-	git status (daca apare ceva cu rosu, inseamna ca s-au facut modificari/adaugari de fisiere)
+		- pentru adaugare se folosesc:
+			-	git add . (adauga si modifica tot)
+			-	git add new.java (adauga/modifica doar new.java)
+
+-	git status ---> new.java se face cu verde
+
+Dupa actualizarea statusului se face commit cu:
+
+-	git commit -m "Se adauga un nume aici" new.java
+		rezultat: 
+		java
+		[master 4588f6b] am adaugat hello.java
+		1 file changed, 8 insertions(+)
+		create mode 100644 hello.java
+
+Dupa ce s-a facut commit, se face update si pe Github:
+
+-	git push -u origin master
+-	se solicita username github
+-	se solicita parola github
